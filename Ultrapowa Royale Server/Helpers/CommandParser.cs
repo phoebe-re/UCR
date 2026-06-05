@@ -25,7 +25,7 @@ namespace UCS.Helpers
 
                 case "/status":
                     Console.WriteLine("");
-                    Console.WriteLine("[UCR][INFO]  -> IP Address (public):    " + new WebClient().DownloadString("http://bot.whatismyipaddress.com/"));
+                    Console.WriteLine("[UCR][INFO]  -> IP Address (public):    " + new WebClient().DownloadString("http://api.ipify.org"));//"http://bot.whatismyipaddress.com/"));
                     Console.WriteLine("[UCR][INFO]  -> IP Address (local):     " + Dns.GetHostByName(Dns.GetHostName()).AddressList[0]);
                     Console.WriteLine("[UCR][INFO]  -> Online players:         " + ResourcesManager.GetOnlinePlayers().Count);
                     Console.WriteLine("[UCR][INFO]  -> Connected players:      " + ResourcesManager.GetConnectedClients().Count);
