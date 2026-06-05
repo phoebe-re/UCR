@@ -1,4 +1,4 @@
-﻿using Sodium;
+using Sodium;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -80,7 +80,7 @@ namespace UCS.PacketProcessing
 
         public override void Process(Level level)
         {
-            if (!Convert.ToBoolean(ConfigurationManager.AppSettings["maintenanceMode"]) || Client.CState == 0)
+            if (Convert.ToBoolean(ConfigurationManager.AppSettings["maintenanceMode"]) || Client.CState == 0)
             {
                 var p = new LoginFailedMessage(Client);
                 p.SetErrorCode(10);
@@ -158,13 +158,11 @@ namespace UCS.PacketProcessing
             PacketManager.ProcessOutgoingPacket(loginOk);
             
 
-            /*
             var alliance = ObjectManager.GetAlliance(level.GetPlayerAvatar().GetAllianceId());
             if (alliance == null)
                 level.GetPlayerAvatar().SetAllianceId(0);
 
             PacketManager.ProcessOutgoingPacket(new OwnHomeDataMessage(Client, level));
-            */
         }
     }
 }
