@@ -1,12 +1,12 @@
-# Readme!
-##### This repository is a clone of the Development build of Ultrapowa Royale Server, a C# server emulator for the game Clash Royale. 
-##### This may be broken.
+# UCR
+### This server is not ready for production because OHD is incomplete.
+##### This repository is a clone of the development build of Ultrapowa Royale Server, a C# server emulator for the game Clash Royale. 
 
 ##### UCR is NOT affiliated with Supercell, or any other company.
-##### Libsodium  requires the Visual C++ Redistributable for Visual Studio 2015.. If its not installed Sodium.SodiumCore will throw a DllNotFoundException.
+##### Libsodium requires the Visual C++ Redistributable for Visual Studio 2015. If it's not installed Sodium.SodiumCore will throw a DllNotFoundException.
 
 # Download
-* PreBuilt UCR -> https://github.com/phoebe-re/UCR/releases/download/1.0/UCR.zip
+* Prebuilt UCR -> https://github.com/phoebe-re/UCR/releases/download/1.0/UCR.zip
 
 
 
